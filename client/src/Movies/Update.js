@@ -33,7 +33,7 @@ const Update = props => {
     const handleSubmit = e => {
         e.preventDefault();
         axios
-        .put(`http://localhost:5000/api/movies${id}`, movie)
+        .put(`http://localhost:5000/api/movies/${id}`, movie)
         .then(res => {
             props.getMovieList()
             push(`/`);
